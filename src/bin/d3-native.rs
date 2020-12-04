@@ -1,5 +1,3 @@
-use std::convert::TryInto;
-
 /*
 arboreal genetics and biome stability
 
@@ -17,8 +15,8 @@ fn main() {
 
 fn solution_one(lines: &Vec<String>, walk: &(usize, usize)) -> i64 {
 	// (row, col)
-	let mut index: (usize, usize) = walk.clone();
-	let travel = (1, 3);
+	let mut index: (usize, usize) = (0, 0);
+	let travel: (usize, usize) = walk.clone();
 	let mut trees = 0;
 
 	while index.0 < lines.len() {
