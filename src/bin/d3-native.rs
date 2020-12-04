@@ -4,7 +4,7 @@ arboreal genetics and biome stability
 movement: 3 right, 1 down
 */
 fn main() {
-	let content = read_file(".\\assets\\3d-input.txt");
+	let content = read_file(".\\assets\\d3-input.txt");
 	let lines = vec_from_string(content);
 
 	// let answer = solution_one(lines);
